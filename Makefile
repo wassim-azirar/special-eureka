@@ -9,25 +9,27 @@ help:
 fileName = $(shell date '+%Y_%m_%d_%H_%M')
 
 build:
-	@echo 'removing prior release...'
+	@echo '#1/5 removing prior release...'
 	@rm -rf dist/*
 
-	@echo 'preparing new extension build...'
+	@echo '#2/5 preparing new extension build...'
 	@export INLINE_RUNTIME_CHUNK=false; \
 	export GENERATE_SOURCEMAP=false; \
 	yarn build
 
-	@echo 'copying build to dist...'
+	@echo "\n"
+	@echo '#3/5 copying build to dist...'
 	@mkdir -p dist
 	@cp -r build/* dist
 
-	@echo 'renaming files...'
+	@echo '#4/5 renaming files...'
 	@mv dist/index.html dist/popup.html
 
-	@echo 'zipping up build files for upload...'
+	@echo '#5/5 zipping up build files for upload...'
 	@zip -r -X releases/release_$(fileName).zip dist/*
 
-	@echo 'new extension build ready for upload'
+	@echo "\n"
+	@echo '🏆🏁 new extension build ready for upload 🏁🏆'
 	@exit 0
 
 define HELP_MESSAGE
