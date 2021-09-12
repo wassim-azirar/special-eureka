@@ -5,6 +5,7 @@ import { DOMMessage, DOMMessageResponse } from "./types";
 function App() {
   const [linkedIn, setLinkedIn] = React.useState("");
   const [name, setName] = React.useState("");
+  const [image, setImage] = React.useState("");
   const [position, setPosition] = React.useState("");
   const [address, setAddress] = React.useState("");
 
@@ -17,6 +18,7 @@ function App() {
         chrome.tabs.sendMessage(tabs[0].id || 0, { type: "GET_DOM" } as DOMMessage, (response: DOMMessageResponse) => {
           setLinkedIn(response.linkedin);
           setName(response.name);
+          setImage(response.image);
           setPosition(response.position);
           setAddress(response.address);
         });
@@ -25,6 +27,7 @@ function App() {
 
   return (
     <div className="App">
+      <img src={image} alt="avatar" className="avatar" />
       <div>{linkedIn}</div>
       <div>{name}</div>
       <div>{position}</div>
