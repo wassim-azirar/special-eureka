@@ -12,24 +12,27 @@ build:
 	@echo '#1/5 removing prior release...'
 	@rm -rf dist/*
 
+	@echo "\n"
 	@echo '#2/5 preparing new extension build...'
 	@export INLINE_RUNTIME_CHUNK=false; \
 	export GENERATE_SOURCEMAP=false; \
 	yarn build
 
 	@echo "\n"
-	@echo '#3/5 copying build to dist...'
+	@echo '#3/5 copying build folder content to dist folder...'
 	@mkdir -p dist
 	@cp -r build/* dist
 
-	@echo '#4/5 renaming files...'
+	@echo "\n"
+	@echo '#4/5 renaming index.html to popup.html...'
 	@mv dist/index.html dist/popup.html
 
-	@echo '#5/5 zipping up build files for upload...'
+	@echo "\n"
+	@echo '#5/5 zipping dist files for upload...'
 	@zip -r -X releases/release_$(fileName).zip dist/*
 
 	@echo "\n"
-	@echo '🏆🏁 new extension build ready for upload 🏁🏆'
+	@echo '🏆🏁 a extension release is ready for upload 🏁🏆'
 	@exit 0
 
 define HELP_MESSAGE
