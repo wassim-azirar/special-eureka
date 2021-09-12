@@ -1,7 +1,10 @@
 export type DOMMessage = {
-  type: 'GET_DOM'
-}
+  type: "GET_DOM";
+};
 
 export type DOMMessageResponse = {
-  title: string;
-}
+  linkedin: string;
+  name: string;
+  position: string;
+  address: string;
+};
