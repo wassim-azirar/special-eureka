@@ -1,23 +1,54 @@
 import { DOMMessage, DOMMessageResponse } from "../types";
 
-const callback = (message: DOMMessage, sender: chrome.runtime.MessageSender, sendResponse: (response: DOMMessageResponse) => void) => {
-  console.log("message", message);
+const requestInit: RequestInit = {
+  method: "GET",
+  cache: "no-cache",
+  credentials: "same-origin"
+};
 
+const getCookieValue = (cookieName: string) => {
+  const cookie = document.cookie.match(`(^|[^;]+)\\s*${cookieName}\\s*=\\s*([^;]+)`);
+  return cookie ? cookie.pop() : "";
+};
+
+const callback = async (message: DOMMessage, sender: chrome.runtime.MessageSender, sendResponse: (response: DOMMessageResponse) => void) => {
   const name = document.querySelectorAll("h1.text-heading-xlarge")[0].innerHTML.replace(/\n/gi, "").trim();
   const position = document.querySelectorAll("div.text-body-medium")[0].innerHTML.replace(/\n/gi, "").trim();
   const address = document.querySelectorAll("span.text-body-small.inline")[0].innerHTML.replace(/\n/gi, "").trim();
 
-  const ownImage = document.querySelectorAll("img.profile-photo-edit__preview");
-  const otherImage = document.querySelectorAll("img.pv-top-card-profile-picture__image");
+  console.log("name", name);
+  console.log("position", position);
+  console.log("address", address);
 
-  const image = ownImage && ownImage.length > 0 ? ownImage[0].getAttribute("src") : otherImage[0].getAttribute("src");
+  const ownImage = document.querySelectorAll("img.profile-photo-edit__preview");
+  const ownImageValue = ownImage && ownImage.length > 0 ? ownImage[0]?.getAttribute("src") : "";
+
+  const otherImage = document.querySelectorAll("img.pv-top-card-profile-picture__image");
+  const otherImageValue = otherImage && otherImage.length > 0 ? otherImage[0]?.getAttribute("src") : "";
+
+  const image = ownImageValue || otherImageValue || "https://www.pngkey.com/png/detail/157-1579943_no-profile-picture-round.png";
+
+  const linkedIn = window.location.href.split("/")[4];
+  console.log("linkedIn", linkedIn);
+
+  const cookie = getCookieValue("JSESSIONID");
+  console.log("cookie", cookie);
+
+  const csrf = cookie ? cookie.replace(/"/gi, "") : "";
+  const detailsRequest = await fetch(`https://www.linkedin.com/voyager/api/identity/profiles/${linkedIn}/profileContactInfo`, {
+    ...requestInit,
+    headers: { "csrf-token": csrf }
+  });
+
+  const detailsResponse = await detailsRequest.json();
+  console.log("detailsResponse", detailsResponse);
 
   const response: DOMMessageResponse = {
-    linkedin: window.location.href.split("/")[4],
-    name: name,
-    image: image ? image : "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
-    position: position,
-    address: address
+    linkedIn,
+    name,
+    image,
+    position,
+    address
   };
 
   sendResponse(response);
