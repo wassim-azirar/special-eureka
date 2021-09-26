@@ -14,8 +14,6 @@ build:
 
 	@echo "\n"
 	@echo '#2/6 preparing new extension build...'
-	@export INLINE_RUNTIME_CHUNK=false; \
-	export GENERATE_SOURCEMAP=false; \
 	yarn build
 
 	@echo "\n"

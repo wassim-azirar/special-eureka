@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { DOMMessage, DOMMessageResponse } from "./types";
+import { DOMMessage, DOMMessageResponse } from "../types";
 
 function App() {
   const [linkedIn, setLinkedIn] = React.useState("");

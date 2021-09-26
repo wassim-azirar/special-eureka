@@ -4,9 +4,13 @@ const callback = (message: DOMMessage, sender: chrome.runtime.MessageSender, sen
   console.log("message", message);
 
   const name = document.querySelectorAll("h1.text-heading-xlarge")[0].innerHTML.replace(/\n/gi, "").trim();
-  const image = document.querySelectorAll("img.pv-top-card-profile-picture__image")[0].getAttribute("src");
   const position = document.querySelectorAll("div.text-body-medium")[0].innerHTML.replace(/\n/gi, "").trim();
   const address = document.querySelectorAll("span.text-body-small.inline")[0].innerHTML.replace(/\n/gi, "").trim();
+
+  const ownImage = document.querySelectorAll("img.profile-photo-edit__preview");
+  const otherImage = document.querySelectorAll("img.pv-top-card-profile-picture__image");
+
+  const image = ownImage && ownImage.length > 0 ? ownImage[0].getAttribute("src") : otherImage[0].getAttribute("src");
 
   const response: DOMMessageResponse = {
     linkedin: window.location.href.split("/")[4],

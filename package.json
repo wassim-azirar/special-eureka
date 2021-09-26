@@ -14,11 +14,12 @@
     "typescript": "^4.1.2"
   },
   "devDependencies": {
-    "@types/chrome": "^0.0.157"
+    "@types/chrome": "^0.0.157",
+    "cross-env": "^7.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "craco build"
+    "build": "cross-env INLINE_RUNTIME_CHUNK=false GENERATE_SOURCEMAP=false craco build"
   },
   "eslintConfig": {
     "extends": [
