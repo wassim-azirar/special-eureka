@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import { DOMMessage, DOMMessageResponse } from "../types";
 
-function App() {
+const App: React.FunctionComponent = () => {
   const [linkedIn, setLinkedIn] = React.useState("");
   const [name, setName] = React.useState("");
   const [image, setImage] = React.useState("");
@@ -11,7 +11,6 @@ function App() {
 
   React.useEffect(() => {
     // we need to specify which tab to send.
-    /* eslint-disable no-unused-expressions */
     chrome.tabs &&
       chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
         // sends a message to the content script in the specified tab, with a callback to run when a response is sent back.
@@ -35,6 +34,6 @@ function App() {
       <div>{address}</div>
     </div>
   );
-}
+};
 
 export default App;
