@@ -6,6 +6,8 @@
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/e74b2e871935406cb6d7d64f211ac736)](https://app.codacy.com/gh/wassim-azirar/special-eureka/dashboard)
 
+[![Synk](https://snyk.io/test/github/wassim-azirar/special-eureka/badge.svg)](https://snyk.io/test/github/wassim-azirar/special-eureka)
+
 ## Available Scripts
 
 In the project directory, you can run:
