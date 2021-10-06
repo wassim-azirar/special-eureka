@@ -1,0 +1,12 @@
+version: 1
+
+sources:
+  # files or firectories to be excluded
+  exclusions:
+    - 'build'
+    - 'dist'
+    - 'node_modules'
+    - '.git'
+    
+# Specify the languages you would like to scan. default is all
+languages: 'PYTHON,JAVASCRIPT,TYPESCRIPT,HTML,CSS'
