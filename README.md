@@ -1,5 +1,7 @@
 # React Chrome LinkedIn
 
+[![DeepSource](https://deepsource.io/gh/wassim-azirar/special-eureka.svg/?label=active+issues&show_trend=true&token=McnlFygvdIMbMgiP9q6PVzbW)](https://deepsource.io/gh/wassim-azirar/special-eureka/?ref=repository-badge)
+
 ## Available Scripts
 
 In the project directory, you can run:
