@@ -2,6 +2,8 @@
 
 [![DeepSource](https://deepsource.io/gh/wassim-azirar/special-eureka.svg/?label=active+issues&show_trend=true&token=McnlFygvdIMbMgiP9q6PVzbW)](https://deepsource.io/gh/wassim-azirar/special-eureka/?ref=repository-badge)
 
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/e74b2e871935406cb6d7d64f211ac736)](https://www.codacy.com/gh/wassim-azirar/special-eureka/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=wassim-azirar/special-eureka&amp;utm_campaign=Badge_Grade)
+
 Embold https://app.embold.io/organization/gh/wassim-azirar/repositories/5c1c8667b23beb28f8e2032279a28200/dashboard
 
 ## Available Scripts
