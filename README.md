@@ -2,11 +2,6 @@
 
 [![DeepSource](https://deepsource.io/gh/wassim-azirar/special-eureka.svg/?label=active+issues&show_trend=true&token=McnlFygvdIMbMgiP9q6PVzbW)](https://deepsource.io/gh/wassim-azirar/special-eureka/?ref=repository-badge)
 
-<a href="https://scan.coverity.com/projects/wassim-azirar-special-eureka">
-  <img alt="Coverity Scan Build Status"
-       src="https://scan.coverity.com/projects/23811/badge.svg"/>
-</a>
-
 ## Available Scripts
 
 In the project directory, you can run:
