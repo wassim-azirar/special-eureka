@@ -1,6 +1,6 @@
 # React Chrome LinkedIn
 
-[![DeepSource](https://deepsource.io/gh/wassim-azirar/special-eureka.svg/?label=active+issues&show_trend=true&token=McnlFygvdIMbMgiP9q6PVzbW)](https://deepsource.io/gh/wassim-azirar/special-eureka)
+[![DeepSource](https://deepsource.io/gh/wassim-azirar/special-eureka.svg/?label=active+issues)](https://deepsource.io/gh/wassim-azirar/special-eureka)
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/e74b2e871935406cb6d7d64f211ac736)](https://app.codacy.com/gh/wassim-azirar/special-eureka/dashboard)
 
