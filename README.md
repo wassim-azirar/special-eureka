@@ -1,7 +1,5 @@
 # React Chrome LinkedIn
 
-[![wakatime](https://wakatime.com/badge/user/ae6339e8-f13a-4c64-9079-4b4a97712724/project/5974ca3a-731c-4482-a157-e0bdcca5ffb2.svg)](https://wakatime.com/badge/user/ae6339e8-f13a-4c64-9079-4b4a97712724/project/5974ca3a-731c-4482-a157-e0bdcca5ffb2)
-
 [![wakatime](https://wakatime.com/badge/github/wassim-azirar/special-eureka.svg)](https://wakatime.com/badge/github/wassim-azirar/special-eureka)
 
 [Embold 4.64](https://app.embold.io/organization/gh/wassim-azirar/repositories/5c1c8667b23beb28f8e2032279a28200/dashboard)
