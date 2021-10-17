@@ -2,8 +2,6 @@
 
 [![wakatime](https://wakatime.com/badge/github/wassim-azirar/special-eureka.svg)](https://wakatime.com/badge/github/wassim-azirar/special-eureka)
 
-[![wakatime](https://wakatime.com/badge/user/ae6339e8-f13a-4c64-9079-4b4a97712724/project/5974ca3a-731c-4482-a157-e0bdcca5ffb2.svg)](https://wakatime.com/badge/user/ae6339e8-f13a-4c64-9079-4b4a97712724/project/5974ca3a-731c-4482-a157-e0bdcca5ffb2)
-
 [![Depfu](https://badges.depfu.com/badges/6151569429f043730c1061a2f9e12e8f/count.svg)](https://depfu.com/github/wassim-azirar/special-eureka?project_id=32516)
 
 [![DeepSource](https://deepsource.io/gh/wassim-azirar/special-eureka.svg/?label=active+issues)](https://deepsource.io/gh/wassim-azirar/special-eureka)
