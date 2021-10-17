@@ -12,6 +12,8 @@
 
 [![Synk](https://snyk.io/test/github/wassim-azirar/special-eureka/badge.svg)](https://snyk.io/test/github/wassim-azirar/special-eureka)
 
+[![Known Vulnerabilities](https://snyk.io/test/github/wassim-azirar/special-eureka/badge.svg)](https://snyk.io/test/github/wassim-azirar/special-eureka)
+
 [Embold 4.64](https://app.embold.io/organization/gh/wassim-azirar/repositories/5c1c8667b23beb28f8e2032279a28200/dashboard)
 
 ## Available Scripts
