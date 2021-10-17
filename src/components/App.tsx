@@ -1,6 +1,7 @@
 import React from "react";
-import "./App.css";
 import { DOMMessage, DOMMessageResponse } from "../types";
+import "./app.css";
+import "./app.scss";
 
 const App: React.FunctionComponent = () => {
   const [linkedIn, setLinkedIn] = React.useState("");
