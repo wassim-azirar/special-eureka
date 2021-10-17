@@ -28,6 +28,7 @@ const App: React.FunctionComponent = () => {
   return (
     <div className="App">
       <img src={image} alt="avatar" className="avatar" />
+      <div>test</div>
       <div>{linkedIn}</div>
       <div>{name}</div>
       <div>{position}</div>
