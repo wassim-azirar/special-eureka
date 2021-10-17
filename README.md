@@ -4,13 +4,15 @@
 
 [![wakatime](https://wakatime.com/badge/user/ae6339e8-f13a-4c64-9079-4b4a97712724/project/5974ca3a-731c-4482-a157-e0bdcca5ffb2.svg)](https://wakatime.com/badge/user/ae6339e8-f13a-4c64-9079-4b4a97712724/project/5974ca3a-731c-4482-a157-e0bdcca5ffb2)
 
-[Embold 4.64](https://app.embold.io/organization/gh/wassim-azirar/repositories/5c1c8667b23beb28f8e2032279a28200/dashboard)
+[![Depfu](https://badges.depfu.com/badges/6151569429f043730c1061a2f9e12e8f/count.svg)](https://depfu.com/github/wassim-azirar/special-eureka?project_id=32516)
 
 [![DeepSource](https://deepsource.io/gh/wassim-azirar/special-eureka.svg/?label=active+issues)](https://deepsource.io/gh/wassim-azirar/special-eureka)
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/e74b2e871935406cb6d7d64f211ac736)](https://app.codacy.com/gh/wassim-azirar/special-eureka/dashboard)
 
 [![Synk](https://snyk.io/test/github/wassim-azirar/special-eureka/badge.svg)](https://snyk.io/test/github/wassim-azirar/special-eureka)
+
+[Embold 4.64](https://app.embold.io/organization/gh/wassim-azirar/repositories/5c1c8667b23beb28f8e2032279a28200/dashboard)
 
 ## Available Scripts
 
