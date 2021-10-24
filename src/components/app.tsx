@@ -32,6 +32,7 @@ const App: React.FunctionComponent = () => {
       <div>{name}</div>
       <div>{position}</div>
       <div>{address}</div>
+      <div>Hello world</div>
     </div>
   );
 };

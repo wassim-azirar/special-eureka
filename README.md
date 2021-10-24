@@ -2,6 +2,8 @@
 
 [![Netlify](https://api.netlify.com/api/v1/badges/73f1fb7b-36e1-4d36-9ddc-b1a351594c8e/deploy-status)](https://app.netlify.com/sites/special-eureka/deploys)
 
+[![SonarCloud](https://sonarcloud.io/api/project_badges/measure?project=wassim-azirar_special-eureka&metric=alert_status)](https://sonarcloud.io/dashboard?id=wassim-azirar_special-eureka)
+
 [![wakatime](https://wakatime.com/badge/github/wassim-azirar/special-eureka.svg)](https://wakatime.com/badge/github/wassim-azirar/special-eureka)
 
 [![Depfu](https://badges.depfu.com/badges/6151569429f043730c1061a2f9e12e8f/count.svg)](https://depfu.com/github/wassim-azirar/special-eureka?project_id=32516)
