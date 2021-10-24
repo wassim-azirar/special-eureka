@@ -2,7 +2,9 @@
 
 [![Netlify](https://api.netlify.com/api/v1/badges/73f1fb7b-36e1-4d36-9ddc-b1a351594c8e/deploy-status)](https://app.netlify.com/sites/special-eureka/deploys)
 
-[![SonarCloud](https://sonarcloud.io/api/project_badges/measure?project=wassim-azirar_special-eureka&metric=alert_status)](https://sonarcloud.io/dashboard?id=wassim-azirar_special-eureka)
+[![SonarClod Quality](https://sonarcloud.io/api/project_badges/measure?project=wassim-azirar_special-eureka&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=wassim-azirar_special-eureka)
+
+[![SonarCloud Bugs](https://sonarcloud.io/api/project_badges/measure?project=wassim-azirar_special-eureka&metric=bugs)](https://sonarcloud.io/summary/new_code?id=wassim-azirar_special-eureka)
 
 [![wakatime](https://wakatime.com/badge/github/wassim-azirar/special-eureka.svg)](https://wakatime.com/badge/github/wassim-azirar/special-eureka)
 
