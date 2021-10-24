@@ -1,6 +1,5 @@
 import React from "react";
 import { DOMMessage, DOMMessageResponse } from "../types";
-import "./app.css";
 import "./app.scss";
 
 const App: React.FunctionComponent = () => {
@@ -27,7 +26,7 @@ const App: React.FunctionComponent = () => {
   });
 
   return (
-    <div className="App">
+    <div className="app">
       <img src={image} alt="avatar" className="avatar" />
       <div>{linkedIn}</div>
       <div>{name}</div>
